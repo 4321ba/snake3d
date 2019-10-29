@@ -1,0 +1,49 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://materials/red.tres" type="Material" id=1]
+[ext_resource path="res://materials/green.tres" type="Material" id=2]
+[ext_resource path="res://materials/blue.tres" type="Material" id=3]
+[ext_resource path="res://materials/rock.tres" type="Material" id=4]
+[ext_resource path="res://materials/orange.tres" type="Material" id=5]
+
+[sub_resource type="CubeMesh" id=1]
+material = ExtResource( 1 )
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = ExtResource( 2 )
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="CubeMesh" id=3]
+material = ExtResource( 3 )
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="CubeMesh" id=4]
+material = ExtResource( 4 )
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="CubeMesh" id=5]
+material = ExtResource( 5 )
+size = Vector3( 1, 1, 1 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="red" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="green" type="MeshInstance" parent="."]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="blue" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="rock" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="orange" type="MeshInstance" parent="."]
+mesh = SubResource( 5 )
+material/0 = null

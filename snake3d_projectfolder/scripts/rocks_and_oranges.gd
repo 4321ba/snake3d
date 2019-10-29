@@ -8,7 +8,6 @@ func _ready():
 
 func setup():
 	gridmap = game.gridmap
-	print(global.rock_count)
 	setup_objects(gridmap.BLOCK_ROCK, global.rock_count)
 	setup_objects(gridmap.BLOCK_ORANGE, global.orange_count)
 
